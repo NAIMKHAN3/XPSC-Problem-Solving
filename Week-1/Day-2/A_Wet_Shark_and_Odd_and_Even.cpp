@@ -14,7 +14,6 @@ int main()
         cin >> x;
         v[i] = x;
         sum +=v[i];
-    // cout <<sum;
         if(v[i] % 2 != 0){
             odd = min(odd, v[i]);
         }

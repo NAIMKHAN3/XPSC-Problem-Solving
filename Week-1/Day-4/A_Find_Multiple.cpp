@@ -1,9 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void solved(){
-    
-}
+
 int main()
 {
     int x, y, z;
