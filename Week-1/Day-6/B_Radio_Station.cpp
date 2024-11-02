@@ -12,13 +12,14 @@ int main()
         cin >> a >> b;
         mp[b] = a;
     }
-   
-    for(int i = 0; i < m; i++){
+
+    for (int i = 0; i < m; i++)
+    {
         string a, b;
         cin >> a >> b;
-        string temp =b;
-    temp.pop_back();
-        cout<< a<<" " << b << " " << "#" << mp[temp] << endl;
+        string temp = b;
+        temp.pop_back();
+        cout << a << " " << b << " " << "#" << mp[temp] << endl;
     }
     return 0;
 }
