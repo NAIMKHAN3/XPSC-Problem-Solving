@@ -47,3 +47,74 @@ int main()
 
     return 0;
 }
+
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main()
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     int t;
+//     cin >> t;
+//     while (t--)
+//     {
+//         int n;
+//         cin >> n;
+//         vector<int> v(n);
+        
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin >> v[i];
+//         }
+
+//         int i = 0;
+//         int j = n - 1;
+//         int mn = 1;
+//         int mx = n;
+//         bool flag = false;
+//         while (i < j)
+//         {
+//             if (v[i] != mn && v[i] != mx && v[j] != mn && v[j] != mx)
+//             {
+//                 flag = true;
+//                 break;
+//             }
+
+//             if (v[i] == mn)
+//             {
+//                 mn++;
+//                 i++;
+//             }
+//             else if (v[i] == mx)
+//             {
+//                 mx--;
+//                 i++;
+//             }
+//             else if (v[j] == mn)
+//             {
+//                 mn++;
+//                 j--;
+//             }
+//             else if (v[j] == mx)
+//             {
+//                 mx--;
+//                 j--;
+//             }
+//         }
+
+//         if (flag)
+//         {
+//             cout << mn << " " << mx << endl;
+//         }
+//         else
+//         {
+//             cout << -1 << endl;
+//         }
+//     }
+//     return 0;
+// }
