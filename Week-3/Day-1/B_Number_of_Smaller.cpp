@@ -22,12 +22,8 @@ int main()
     int j = 0;
     int count = 0;
     vector<int> ans;
-    while (true)
+    while (j != m)
     {
-        if (j == m)
-        {
-            break;
-        }
         if (i != n && a[i] < b[j]){
             count++;
             i++;
