@@ -23,7 +23,6 @@ int main()
         {
             if (str[j] == 'W')
             {
-                // cout << str[j];
                 q.push(str[j]);
             }
             if (j - i + 1 == k)
