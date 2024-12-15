@@ -6,27 +6,27 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int t;
+    long long t;
     cin >> t;
     while (t--)
     {
-        int n;
+        long long n;
         cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++)
+        vector<long long> a(n);
+        for (long long i = 0; i < n; i++)
         {
             cin >> a[i];
         }
-        vector<int> b(n);
-        for (int i = 0; i < n; i++)
+        vector<long long> b(n);
+        for (long long i = 0; i < n; i++)
         {
             cin >> b[i];
         }
 
-        int d = -1;
-        int ansD = -1;
+        long long d = -1;
+        long long ansD = -1;
         bool flag = false;
-        for (int i = 0; i < n; i++)
+        for (long long i = 0; i < n; i++)
         {
             if (a[i] < b[i])
             {
@@ -61,9 +61,13 @@ int main()
         }
 
         if (d == -1 || ansD <= d)
-            cout << "YES" << endl;
+            {
+                cout << "YES" << endl;
+            }
         else
-            cout << "NO" << endl;
+           {
+             cout << "NO" << endl;
+           }
     }
     return 0;
 }
