@@ -1,39 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
+   ios::sync_with_stdio(false);
+   cin.tie(nullptr);
 
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
+   long long n, k;
+   cin >> n >> k;
+   vector<long long> v;
+   for (long long i = 1;i * i <= n;i++) {
+      if (n % i == 0) {
+         v.push_back(i);
+         if ((n / i) != i) {
+            v.push_back(n / i);
+         }
+      }
+   }
 
-    int n, k;
-    cin >> n >> k;
+   sort(v.begin(), v.end());
 
-    vector<int> v;
+   if (v.size() < k) {
+      cout << -1 << '\n';
+   }
+   else {
+      cout << v[k - 1] << '\n';
+   }
 
-    for (int i = 1; i * i <= n; i++)
-    {
-        if (n % i == 0)
-        {
-            v.push_back(i);
-            if (i * i != n)
-            {
-                v.push_back(n / i);
-            }
-        }
-    }
-
-    if (k > v.size())
-    {
-        cout << "-1" << endl;
-    }
-    else
-    {
-        sort(v.begin(), v.end());
-        cout << v[k - 1] << endl;
-    }
-
-    return 0;
+   return 0;
 }
